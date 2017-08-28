@@ -7,6 +7,9 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        Library lib = new Library();
+        if(lib.someLibraryMethod())
+            System.out.println(new App().getGreeting());
     }
 }
