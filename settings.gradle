@@ -1,0 +1,3 @@
+rootProject.name ='mpd'
+include 'movhub'
+include 'app'
