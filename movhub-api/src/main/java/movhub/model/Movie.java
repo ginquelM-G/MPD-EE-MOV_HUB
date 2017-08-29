@@ -14,6 +14,14 @@ public class Movie {
     private final Supplier<MovieDetails> details;
 
 
+    public Movie(){
+        this.id = 0;
+        this.title = null;
+        this.release_date = null;
+        this.vote_average = 0;
+        this.details = null;
+
+    }
 
     public Movie(int id, String title, String release_date, double vote_average, Supplier<MovieDetails> details) {
         this.id = id;
@@ -46,5 +54,18 @@ public class Movie {
     @Override
     public String toString() {
         return "Movie " + super.toString();
+    }
+
+
+    //TODO
+    public static Movie valueOf(String line){
+
+        String [] data = line.split("},");
+
+        System.out.println("data [0] "+ data[0]);
+        return new Movie(
+
+        );
+
     }
 }
