@@ -3,6 +3,7 @@ package util;
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -15,17 +16,18 @@ public class HttpRequest  implements IRequest {
         List<String> res = new ArrayList<>();
         try(InputStream in = new URL(path).openStream()){
             // Consumir o Inputstream e adicionar ao res
-            try (BufferedReader reader = new BufferedReader(new InputStreamReader(in))){
-                String line;
-                while((line = reader.readLine()) != null){
-                    res.add(line);
-                }
-
-            }
+            Iterator<String> iter = new IteratorFromReader(in);
+            return () -> iter;
+//            try (BufferedReader reader = new BufferedReader(new InputStreamReader(in))){
+//                String line;
+//                while((line = reader.readLine()) != null){
+//                    res.add(line);
+//                }
+//
+//            }
 
         }catch (IOException e){
             throw new UncheckedIOException(e);
         }
-        return res;
     }
 }

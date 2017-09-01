@@ -2,6 +2,7 @@ package util;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by User01 on 28/08/2017.
@@ -18,15 +19,16 @@ public class FileRequest implements IRequest {
              /*
              * Consumir o Inputstream e adicionar dados ao res
              */
-            try(BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    res.add(line);
-                }
-            }
+            Iterator<String> iter = new IteratorFromReader(in);
+            return () -> iter;
+//            try(BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
+//                String line;
+//                while ((line = reader.readLine()) != null) {
+//                    res.add(line);
+//                }
+//            }
         }catch (IOException e){
             throw new UncheckedIOException(e);
         }
-        return res;
     }
 }
