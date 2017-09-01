@@ -8,11 +8,14 @@ import java.util.ArrayList;
 /**
  * Created by User01 on 28/08/2017.
  */
-public class FileRequest extends AbstractRequest {
+public class FileRequest extends Request {
 
 
-    @Override
-    protected InputStream getStream(String path) {
+    public FileRequest() {
+        super(FileRequest::getStream);
+    }
+
+    protected static InputStream getStream(String path) {
         String [] parts = path.split("/");
         path = parts[parts.length-1].substring(0, 5);
         path = "search-"+path+".txt";

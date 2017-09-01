@@ -8,10 +8,13 @@ import java.net.URL;
 /**
  * Created by User01 on 28/08/2017.
  */
-public class HttpRequest  extends AbstractRequest {
+public class HttpRequest  extends Request {
 
-    @Override
-    protected InputStream getStream(String path) {
+    public HttpRequest() {
+        super(HttpRequest::getStream);
+    }
+
+    public static InputStream getStream(String path) {
         InputStream in;
         try{
             return in = new URL(path).openStream();
