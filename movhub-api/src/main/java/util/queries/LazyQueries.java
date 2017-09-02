@@ -26,4 +26,12 @@ public class LazyQueries {
         }
         return size;
     }
+
+    public static <T> String join(Iterable<T> src) {
+        String res = "";
+        for (T item: src) {
+            res += item.toString();
+        }
+        return res;
+    }
 }

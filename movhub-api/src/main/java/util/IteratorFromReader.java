@@ -25,8 +25,8 @@ public class IteratorFromReader implements Iterator<String>{
         try{
             String line = reader.readLine();
             if(line != null){
-                in.close();
-                reader.close();
+            //    in.close();
+             //   reader.close();
             }
             return line;
         }catch (IOException e){

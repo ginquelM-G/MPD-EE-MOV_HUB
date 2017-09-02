@@ -4,34 +4,56 @@ package movhub.data.dto;
  * Created by Moreira on 02-09-2017.
  */
 public class MovieDetailsDto {
+    private final String tagline;
+    private final int id;
+    private final String original_title;
+    private final String overview;
+    private final String release_date;
+    private final double vote_average;
 
+    public MovieDetailsDto(String tagline, int id, String original_title, String overview, String release_date, double vote_average) {
+        this.tagline = tagline;
+        this.id = id;
+        this.original_title = original_title;
+        this.overview = overview;
+        this.release_date = release_date;
+        this.vote_average = vote_average;
+    }
 
     public String tagLine(){
-        return null;
+        return tagline;
     }
 
     public int id(){
-        return 0;
+        return id;
     }
 
     public String getOriginalTitle(){
-        return null;
+        return original_title;
     }
 
     public String getOverview(){
-        return null;
+        return overview;
     }
 
     public String getReleaseDate(){
-        return null;
+        return release_date;
     }
 
     public double getVoteAverage(){
-        return 0;
+        return vote_average;
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return "MovieDetailsDto {" +
+                "tagline: " + tagline +
+                ", id:" + id +
+                ", originalTitle:" + original_title +
+                ", releaseDate: "+ release_date +
+                ", voteAverage: " + vote_average +
+                ", overview: "+ overview +
+                "}";
+//        return super.toString();
     }
 }
