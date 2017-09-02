@@ -6,7 +6,7 @@ package movhub.data.dto;
 public class MovieSearchItemDto {
 
 
-    public String title(){
+    public String getTitle(){
         return null;
     }
 
@@ -14,11 +14,11 @@ public class MovieSearchItemDto {
         return 0;
     }
 
-    public String releaseDate(){
+    public String getReleaseDate(){
         return null;
     }
 
-    public double voteAverage(){
+    public double getVoteAverage(){
         return 0;
     }
 

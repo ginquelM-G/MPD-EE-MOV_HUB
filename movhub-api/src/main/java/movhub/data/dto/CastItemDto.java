@@ -6,15 +6,15 @@ package movhub.data.dto;
 public class CastItemDto {
 
 
-    public String name(){
+    public String getName(){
         return null;
     }
 
-    public int id(){
+    public int getId(){
         return 0;
     }
 
-    public String character(){
+    public String getCharacter(){
         return null;
     }
 

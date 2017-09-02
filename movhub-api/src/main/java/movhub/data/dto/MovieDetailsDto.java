@@ -14,19 +14,19 @@ public class MovieDetailsDto {
         return 0;
     }
 
-    public String originalTitle(){
+    public String getOriginalTitle(){
         return null;
     }
 
-    public String overview(){
+    public String getOverview(){
         return null;
     }
 
-    public String releaseDate(){
+    public String getReleaseDate(){
         return null;
     }
 
-    public double voteAverage(){
+    public double getVoteAverage(){
         return 0;
     }
 

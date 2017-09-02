@@ -5,7 +5,7 @@ package movhub.data.dto;
  */
 public class ActorCreditsDto {
 
-    public MovieSearchItemDto[] cast(){
+    public MovieSearchItemDto[] getCast(){
         return null;
     }
 
