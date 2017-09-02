@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0dd41c5b-c3c4-4dee-bd94-466186648d44" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java" afterPath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movhub-api/src/test/java/queries/MovhubDTOTest.java" afterPath="$PROJECT_DIR$/movhub-api/src/test/java/queries/MovhubDTOTest.java" />
-    </list>
+    <list default="true" id="0dd41c5b-c3c4-4dee-bd94-466186648d44" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/app/.gradle/" />
@@ -56,8 +53,8 @@
           <file leaf-file-name="HttpRequest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/util/HttpRequest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+                <state relative-caret-position="187">
+                  <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
                   <folding>
                     <element signature="docComment;class#HttpRequest#0" expanded="false" />
                     <element signature="e#244#245#0" expanded="true" />
@@ -126,7 +123,7 @@
             <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="193">
-                  <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+                  <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
                   <folding>
                     <element signature="e#1464#1658#0" expanded="true" />
                     <element signature="e#1657#1658#0" expanded="true" />
@@ -139,7 +136,7 @@
             <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="204">
-                  <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                  <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -149,7 +146,7 @@
             <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CreditsDto.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="331">
-                  <caret line="21" column="39" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="39" />
+                  <caret line="21" column="39" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="39" />
                   <folding>
                     <element signature="e#177#178#0" expanded="true" />
                     <element signature="e#209#210#0" expanded="true" />
@@ -1590,7 +1587,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="756" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1935,18 +1931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/util/HttpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding>
-            <element signature="docComment;class#HttpRequest#0" expanded="false" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/util/queries/LazyQueries.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -2053,7 +2037,7 @@
     <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CreditsDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
-          <caret line="21" column="39" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="39" />
+          <caret line="21" column="39" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="39" />
           <folding>
             <element signature="e#177#178#0" expanded="true" />
             <element signature="e#209#210#0" expanded="true" />
@@ -2066,7 +2050,7 @@
     <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2131,10 +2115,22 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
           <folding>
             <element signature="e#1464#1658#0" expanded="true" />
             <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/util/HttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding>
+            <element signature="docComment;class#HttpRequest#0" expanded="false" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
           </folding>
         </state>
       </provider>
