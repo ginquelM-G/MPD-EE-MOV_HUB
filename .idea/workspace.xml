@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0dd41c5b-c3c4-4dee-bd94-466186648d44" name="Default" comment="" />
+    <list default="true" id="0dd41c5b-c3c4-4dee-bd94-466186648d44" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movhub-api/src/main/java/util/Cache.java" afterPath="$PROJECT_DIR$/movhub-api/src/main/java/util/Cache.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/app/.gradle/" />
@@ -47,7 +49,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45461422">
+    <splitter split-orientation="horizontal" split-proportion="0.53751284">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="HttpRequest.java" pinned="false" current-in-tab="false">
@@ -74,21 +76,23 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Cache.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Cache.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/util/Cache.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-                  <folding />
+                <state relative-caret-position="247">
+                  <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MovServiceCache.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="MovServiceCache.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovServiceCache.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+                <state relative-caret-position="119">
+                  <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -137,26 +141,13 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="MovhubDTOTest.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MovhubDTOTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/movhub-api/src/test/java/queries/MovhubDTOTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
+                <state relative-caret-position="176">
                   <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FrameworkMethod.java" pinned="false" current-in-tab="true">
-            <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="193">
-                  <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#1464#1658#0" expanded="true" />
-                    <element signature="e#1657#1658#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -893,6 +884,7 @@
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CreditsDto.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/test/java/queries/MovhubDTOTest.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java" />
+        <option value="$PROJECT_DIR$/movhub-api/src/main/java/util/Cache.java" />
       </list>
     </option>
   </component>
@@ -1923,16 +1915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/test/java/queries/MovhubDTOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -2011,19 +1993,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/util/Cache.java">
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovServiceCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovServiceCache.java">
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/test/java/queries/MovhubDTOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="176">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/util/Cache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
