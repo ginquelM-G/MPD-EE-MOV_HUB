@@ -1,4 +1,4 @@
-package movhub;
+package movhub.data;
 
 import movhub.model.Movie;
 import util.IRequest;

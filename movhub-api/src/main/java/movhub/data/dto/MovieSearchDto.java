@@ -5,8 +5,14 @@ package movhub.data.dto;
  */
 public class MovieSearchDto {
 
+    public final MovieSearchItemDto[] movieSearchItemDtos;
+
+    public MovieSearchDto(MovieSearchItemDto[] movieSearchItemDtos){
+        this.movieSearchItemDtos = movieSearchItemDtos;
+    }
+
     public MovieSearchItemDto[] getResults(){
-        return null;
+        return movieSearchItemDtos;
     }
 
 }

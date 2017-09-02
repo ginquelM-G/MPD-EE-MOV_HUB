@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd41c5b-c3c4-4dee-bd94-466186648d44" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovhubWebApi.java" afterPath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/MovhubWebApi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/app/app_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/app/app_main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/app/app_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/app/app_test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/App.java" afterPath="$PROJECT_DIR$/app/src/main/java/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java" afterPath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CastItemDto.java" afterPath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CastItemDto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CreditsDto.java" afterPath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CreditsDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieDetailsDto.java" afterPath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieDetailsDto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchDto.java" afterPath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchItemDto.java" afterPath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchItemDto.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -51,7 +54,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.3482587">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="HttpRequest.java" pinned="false" current-in-tab="false">
@@ -68,118 +71,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MovieSearchDto.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchDto.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-                  <folding>
-                    <element signature="e#146#147#0" expanded="true" />
-                    <element signature="e#173#174#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MovieSearchItemDto.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchItemDto.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#135#136#0" expanded="true" />
-                    <element signature="e#162#163#0" expanded="true" />
-                    <element signature="e#184#185#0" expanded="true" />
-                    <element signature="e#208#209#0" expanded="true" />
-                    <element signature="e#245#246#0" expanded="true" />
-                    <element signature="e#272#273#0" expanded="true" />
-                    <element signature="e#309#310#0" expanded="true" />
-                    <element signature="e#333#334#0" expanded="true" />
-                    <element signature="e#379#380#0" expanded="true" />
-                    <element signature="e#418#419#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MovieDetailsDto.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieDetailsDto.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="226">
-                  <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#131#132#0" expanded="true" />
-                    <element signature="e#158#159#0" expanded="true" />
-                    <element signature="e#180#181#0" expanded="true" />
-                    <element signature="e#204#205#0" expanded="true" />
-                    <element signature="e#243#244#0" expanded="true" />
-                    <element signature="e#270#271#0" expanded="true" />
-                    <element signature="e#304#305#0" expanded="true" />
-                    <element signature="e#331#332#0" expanded="true" />
-                    <element signature="e#368#369#0" expanded="true" />
-                    <element signature="e#395#396#0" expanded="true" />
-                    <element signature="e#432#433#0" expanded="true" />
-                    <element signature="e#456#457#0" expanded="true" />
-                    <element signature="e#502#503#0" expanded="true" />
-                    <element signature="e#541#542#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CreditsDto.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CreditsDto.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#132#133#0" expanded="true" />
-                    <element signature="e#159#160#0" expanded="true" />
-                    <element signature="e#205#206#0" expanded="true" />
-                    <element signature="e#244#245#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CastItemDto.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CastItemDto.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="163">
-                  <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#127#128#0" expanded="true" />
-                    <element signature="e#154#155#0" expanded="true" />
-                    <element signature="e#179#180#0" expanded="true" />
-                    <element signature="e#203#204#0" expanded="true" />
-                    <element signature="e#238#239#0" expanded="true" />
-                    <element signature="e#265#266#0" expanded="true" />
-                    <element signature="e#311#312#0" expanded="true" />
-                    <element signature="e#350#351#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Movie.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/model/Movie.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+                <state relative-caret-position="849">
+                  <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ActorCreditsDto.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-                  <folding>
-                    <element signature="e#144#145#0" expanded="true" />
-                    <element signature="e#171#172#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -202,24 +99,129 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="ActorCreditsDto.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java">
+          <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/App.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+                <state relative-caret-position="153">
+                  <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MovieSearchDto.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/settings.gradle">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/build.gradle">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="164">
+                  <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ActorCreditsDto.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+                  <folding>
+                    <element signature="e#231#232#0" expanded="true" />
+                    <element signature="e#293#294#0" expanded="true" />
+                    <element signature="e#337#338#0" expanded="true" />
+                    <element signature="e#379#380#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MovieSearchDto.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchDto.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+                <state relative-caret-position="255">
+                  <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
                   <folding>
-                    <element signature="e#146#147#0" expanded="true" />
-                    <element signature="e#173#174#0" expanded="true" />
+                    <element signature="e#229#230#0" expanded="true" />
+                    <element signature="e#291#292#0" expanded="true" />
+                    <element signature="e#338#339#0" expanded="true" />
+                    <element signature="e#380#381#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CreditsDto.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CreditsDto.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#193#194#0" expanded="true" />
+                    <element signature="e#241#242#0" expanded="true" />
+                    <element signature="e#278#279#0" expanded="true" />
+                    <element signature="e#305#306#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MovhubWebApi.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/MovhubWebApi.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MovService.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="199">
+                  <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#294#295#0" expanded="true" />
+                    <element signature="e#322#323#0" expanded="true" />
+                    <element signature="e#388#389#0" expanded="true" />
+                    <element signature="e#415#416#0" expanded="true" />
+                    <element signature="e#480#481#0" expanded="true" />
+                    <element signature="e#507#508#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MovieSearchItemDto.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchItemDto.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="164">
+                  <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#208#209#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MovieDetailsDto.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieDetailsDto.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#432#433#0" expanded="true" />
+                    <element signature="e#456#457#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -233,8 +235,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="UML Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -749,7 +751,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="9025609847185" />
+        <entry key="$PROJECT_DIR$" value="9025696341690" />
+        <entry key="$PROJECT_DIR$/app/build.gradle" value="2782334528" />
         <entry key="$PROJECT_DIR$/movhub-api/settings.gradle" value="4273334040" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="3440877129" />
       </map>
@@ -889,7 +892,6 @@
         <option value="$PROJECT_DIR$/app/src/main/resources/movhub-app-key.txt" />
         <option value="$PROJECT_DIR$/app/src/main/resources/search-movie.txt" />
         <option value="$PROJECT_DIR$/app/src/main/resources/search-movies-json-pretty-format.txt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/model/Movie.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovhubWebApi.java" />
         <option value="$PROJECT_DIR$/settings.gradle" />
@@ -904,12 +906,17 @@
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/util/Request.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/util/FileRequest.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/util/HttpRequest.java" />
-        <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CastItemDto.java" />
-        <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CreditsDto.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieDetailsDto.java" />
-        <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchDto.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchItemDto.java" />
+        <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/MovhubWebApi.java" />
+        <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/movhubService.java" />
+        <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovService.java" />
+        <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchDto.java" />
+        <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CreditsDto.java" />
+        <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/App.java" />
       </list>
     </option>
   </component>
@@ -1165,8 +1172,122 @@
               <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mpd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MPD-EE-MOV_HUB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movhub-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movhub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mpd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MPD-EE-MOV_HUB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mpd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MPD-EE-MOV_HUB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mpd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MPD-EE-MOV_HUB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mpd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MPD-EE-MOV_HUB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1405,7 +1526,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30033004" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31748468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22929448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3623298" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1459,7 +1580,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovhubWebApi.java">
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/MovhubWebApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
@@ -1579,32 +1700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovhubWebApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/movhub-api/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1626,16 +1721,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="11921" lean-forward="false" selection-start-line="0" selection-start-column="11921" selection-end-line="0" selection-end-column="11921" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1737,42 +1822,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/util/HttpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="docComment;class#HttpRequest#0" expanded="false" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/model/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CastItemDto.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding>
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1793,69 +1847,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CreditsDto.java">
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/util/HttpRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="340">
+          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding>
-            <element signature="e#132#133#0" expanded="true" />
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#205#206#0" expanded="true" />
+            <element signature="docComment;class#HttpRequest#0" expanded="false" />
             <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieDetailsDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#180#181#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
             <element signature="e#432#433#0" expanded="true" />
             <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/model/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="849">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchItemDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#208#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/MovhubWebApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
-            <element signature="e#146#147#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchItemDto.java">
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/CreditsDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="144">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding>
-            <element signature="e#135#136#0" expanded="true" />
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
