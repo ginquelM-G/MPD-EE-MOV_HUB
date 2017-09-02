@@ -1,6 +1,8 @@
 package queries;
 
 import com.google.gson.Gson;
+import movhub.data.dto.CastItemDto;
+import movhub.data.dto.CreditsDto;
 import movhub.data.dto.MovieDetailsDto;
 import movhub.data.dto.MovieSearchDto;
 import org.junit.Test;
@@ -53,6 +55,47 @@ public class MovhubDTOTest {
 
         assertEquals(5,5);
         assertNotNull(movieDetailsDto);
+
+    }
+
+
+    @Test
+    public void test_CreditsDto() {
+        Gson gson = new Gson();
+        String uri3 = "https://api.themoviedb.org/3/movie/293660/credits?api_key=629fc6979bdef5c207d398578144c126";
+        IRequest req = new HttpRequest();
+        Iterable<String> body = req.getContent(uri3);
+
+        String json = join(body);
+       // System.out.println("\n\n\nJSON:\n" + json + "\n\n");
+
+        CreditsDto creditsDto = gson.fromJson(json, CreditsDto.class);
+//        CastItemDto castItemDto = gson.fromJson(json, CastItemDto.class);
+        System.out.println( creditsDto);
+//        System.out.println("\n\n"+ castItemDto);
+
+        assertEquals(5,5);
+        assertNotNull(creditsDto);
+//        assertNotNull(castItemDto);
+
+    }
+
+
+    @Test
+    public void test_ActorCreditsDto() {
+        Gson gson = new Gson();
+        String uri4 = "https://api.themoviedb.org/3/person/10859/movie_credits?api_key=629fc6979bdef5c207d398578144c126";
+        IRequest req = new HttpRequest();
+        Iterable<String> body = req.getContent(uri4);
+
+        //  body.forEach(System.out::println);
+        String json = join(body);
+
+        CastItemDto castItemDto = gson.fromJson(json, CastItemDto.class);
+        System.out.println( castItemDto);
+
+        assertEquals(5,5);
+        assertNotNull(castItemDto);
 
     }
 

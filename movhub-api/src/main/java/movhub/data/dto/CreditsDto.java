@@ -5,20 +5,22 @@ package movhub.data.dto;
  */
 public class CreditsDto {
 
-    public final CastItemDto[] castItemDtos;
+    public final CastItemDto[] cast;
 
-    public CreditsDto(CastItemDto[] castItemDtos){
-        this.castItemDtos = castItemDtos;
+    public CreditsDto(CastItemDto[] cast){
+        this.cast = cast;
     }
 
     public CastItemDto[] getCast(){
-        return null;
+        return cast;
     }
 
     @Override
     public String toString() {
-        return "{" +
-                "castItemDtos=" + castItemDtos +
-                "}";
+        StringBuilder stB = new StringBuilder();
+        for(CastItemDto s: cast)
+            stB.append(s).append("\n");
+
+        return "castItemDtos {" + stB.toString() + "}";
     }
 }
