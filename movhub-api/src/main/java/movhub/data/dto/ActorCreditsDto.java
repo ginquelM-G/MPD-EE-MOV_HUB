@@ -5,14 +5,14 @@ package movhub.data.dto;
  */
 public class ActorCreditsDto {
 
-    public final MovieSearchItemDto[] results;
+    public final MovieSearchItemDto[] cast;
 
-    public ActorCreditsDto(MovieSearchItemDto[] movieSearchItemDtos){
-        this.results = movieSearchItemDtos;
+    public ActorCreditsDto(MovieSearchItemDto[] cast){
+        this.cast = cast;
     }
 
     public MovieSearchItemDto[] getCast(){
-        return results;
+        return cast;
     }
 
 

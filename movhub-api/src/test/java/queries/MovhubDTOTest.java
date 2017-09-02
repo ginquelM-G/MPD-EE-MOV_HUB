@@ -1,7 +1,7 @@
 package queries;
 
 import com.google.gson.Gson;
-import movhub.data.dto.CastItemDto;
+import movhub.data.dto.ActorCreditsDto;
 import movhub.data.dto.CreditsDto;
 import movhub.data.dto.MovieDetailsDto;
 import movhub.data.dto.MovieSearchDto;
@@ -9,7 +9,6 @@ import org.junit.Test;
 import util.HttpRequest;
 import util.IRequest;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static util.queries.LazyQueries.join;
 
@@ -34,6 +33,7 @@ public class MovhubDTOTest {
      //        ActorCreditsDto dto1 = gson.fromJson(json, ActorCreditsDto.class);
          MovieDetailsDto movieDetailsDto = gson.fromJson(json, MovieDetailsDto.class);
          System.out.println("\n\n" + dto);
+        assertNotNull(movieDetailsDto);
     }
 
 
@@ -53,7 +53,6 @@ public class MovhubDTOTest {
         MovieDetailsDto movieDetailsDto = gson.fromJson(json, MovieDetailsDto.class);
         System.out.println( movieDetailsDto);
 
-        assertEquals(5,5);
         assertNotNull(movieDetailsDto);
 
     }
@@ -74,7 +73,6 @@ public class MovhubDTOTest {
         System.out.println( creditsDto);
 //        System.out.println("\n\n"+ castItemDto);
 
-        assertEquals(5,5);
         assertNotNull(creditsDto);
 //        assertNotNull(castItemDto);
 
@@ -88,15 +86,11 @@ public class MovhubDTOTest {
         IRequest req = new HttpRequest();
         Iterable<String> body = req.getContent(uri4);
 
-        //  body.forEach(System.out::println);
         String json = join(body);
 
-        CastItemDto castItemDto = gson.fromJson(json, CastItemDto.class);
-        System.out.println( castItemDto);
-
-        assertEquals(5,5);
-        assertNotNull(castItemDto);
-
+        ActorCreditsDto actorCreditsDto = gson.fromJson(json, ActorCreditsDto.class);
+        System.out.println( actorCreditsDto);
+        assertNotNull(actorCreditsDto);
     }
 
 
