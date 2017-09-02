@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd41c5b-c3c4-4dee-bd94-466186648d44" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movhub-api/src/main/java/util/Cache.java" afterPath="$PROJECT_DIR$/movhub-api/src/main/java/util/Cache.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovService.java" afterPath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovServiceCache.java" afterPath="$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovServiceCache.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -49,7 +50,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.53751284">
+    <splitter split-orientation="horizontal" split-proportion="0.81706065">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="HttpRequest.java" pinned="false" current-in-tab="false">
@@ -76,7 +77,17 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Cache.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="MovhubWebApi.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/MovhubWebApi.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Cache.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/util/Cache.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="247">
@@ -88,12 +99,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MovServiceCache.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MovServiceCache.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovServiceCache.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="55">
+                  <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#899#900#0" expanded="true" />
+                    <element signature="e#925#926#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MovService.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="296">
+                  <caret line="35" column="5" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="35" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -144,7 +171,7 @@
           <file leaf-file-name="MovhubDTOTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/movhub-api/src/test/java/queries/MovhubDTOTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
+                <state relative-caret-position="248">
                   <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -872,7 +899,6 @@
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/util/HttpRequest.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/MovhubWebApi.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/movhubService.java" />
-        <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovService.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/util/queries/LazyQueries.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/MovieSearchItemDto.java" />
@@ -885,6 +911,8 @@
         <option value="$PROJECT_DIR$/movhub-api/src/test/java/queries/MovhubDTOTest.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/dto/ActorCreditsDto.java" />
         <option value="$PROJECT_DIR$/movhub-api/src/main/java/util/Cache.java" />
+        <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovService.java" />
+        <option value="$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovServiceCache.java" />
       </list>
     </option>
   </component>
@@ -1479,10 +1507,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26399395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17927383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3623298" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36378205" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22596154" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1738,14 +1766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/MovhubWebApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1816,22 +1836,6 @@
             <element signature="e#243#244#0" expanded="true" />
             <element signature="e#290#291#0" expanded="true" />
             <element signature="e#320#321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1952,12 +1956,12 @@
         <state relative-caret-position="66">
           <caret line="369" column="0" lean-forward="false" selection-start-line="369" selection-start-column="0" selection-end-line="369" selection-end-column="0" />
           <folding>
-            <element signature="e#2922#2923#0" expanded="true" />
-            <element signature="e#2966#2967#0" expanded="true" />
-            <element signature="e#10310#10449#0" expanded="true" />
-            <element signature="e#10448#10449#0" expanded="true" />
-            <element signature="e#11040#11204#0" expanded="true" />
-            <element signature="e#11203#11204#0" expanded="true" />
+            <element signature="e#2922#2923#0" expanded="false" />
+            <element signature="e#2966#2967#0" expanded="false" />
+            <element signature="e#10310#10449#0" expanded="false" />
+            <element signature="e#10448#10449#0" expanded="false" />
+            <element signature="e#11040#11204#0" expanded="false" />
+            <element signature="e#11203#11204#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1967,8 +1971,8 @@
         <state relative-caret-position="193">
           <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
           <folding>
-            <element signature="e#1464#1658#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
+            <element signature="e#1464#1658#0" expanded="false" />
+            <element signature="e#1657#1658#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1993,17 +1997,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovServiceCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/movhub-api/src/test/java/queries/MovhubDTOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="248">
           <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2017,6 +2013,36 @@
           <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/data/MovhubWebApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movhub-api/src/main/java/movhub/MovServiceCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
           </folding>
         </state>
       </provider>
