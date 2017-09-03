@@ -11,6 +11,14 @@ public class MovieDetailsDto {
     private final String release_date;
     private final double vote_average;
 
+    public MovieDetailsDto(){
+        this.tagline = "";
+        this.id = 0;
+        this.original_title = "";
+        this.overview = "";
+        this.release_date = "";
+        this.vote_average = 0;
+    }
     public MovieDetailsDto(String tagline, int id, String original_title, String overview, String release_date, double vote_average) {
         this.tagline = tagline;
         this.id = id;
@@ -20,7 +28,7 @@ public class MovieDetailsDto {
         this.vote_average = vote_average;
     }
 
-    public String tagLine(){
+    public String getTagline(){
         return tagline;
     }
 

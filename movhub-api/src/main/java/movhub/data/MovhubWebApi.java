@@ -1,18 +1,22 @@
 package movhub.data;
 
+import com.google.gson.Gson;
+import movhub.data.dto.MovieDetailsDto;
+import movhub.data.dto.MovieSearchDto;
 import movhub.model.Movie;
 import util.IRequest;
 
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.stream.Stream;
 
 /**
  * Created by User01 on 28/08/2017.
  */
-public class MovhubWebApi {
+public class MovhubWebApi implements AutoCloseable{
 
     /*
         key = 629fc6979bdef5c207d398578144c126
@@ -23,7 +27,14 @@ public class MovhubWebApi {
     */
 
     private static final String MOVHUB_TOKEN;
-    private static final String MOVHUB_HOST = "https://api.themoviedb.org/3/";//"https://developers.themoviedb.org/3/";
+    private static final String MOVHUB_HOST = "https://api.themoviedb.org";//"https://developers.themoviedb.org/3/";
+    private static final String MOVHUB_SEARCH_MOVIE ="/3/search/movie?query=%s";
+    private static final String MOVHUB_SEARCH_MOVIE_ARGS ="&api_key=%s";
+
+    private static final String MOVHUB_MOVIE ="/3/movie/%d?";
+    private static final String MOVHUB_MOVIE_ARGS ="api_key=%s";
+
+
 
     static{
         try{
@@ -52,22 +63,63 @@ public class MovhubWebApi {
     /**
      *  https://api.themoviedb.org/3/search/movie?api_key=629fc6979bdef5c207d398578144c126&query=war+games
      */
-     public Iterable<Movie> searchMovie(){
+     public CompletableFuture<Stream<MovieSearchDto>> searchMovie(String  query){
 
 
-         String path = MOVHUB_HOST + "search/movie?" +
-                 String.format("api_key=%s&query=%s", MOVHUB_TOKEN, "Logan");
+         String path = MOVHUB_HOST + MOVHUB_SEARCH_MOVIE + MOVHUB_SEARCH_MOVIE_ARGS;
+         String url = String.format(path, query, MOVHUB_TOKEN);
 
-         System.out.println("\n\nSearchMovie path:\n"+ path);
+         System.out.println("\n\nSearchMovie path:\n"+ url);
 
          List<Movie> res = new ArrayList<>();
-         Iterator<String> iter = req.getContent(path).iterator();
+         CompletableFuture<Stream<String>> iter = req.getContent(path);
 
-         while(iter.hasNext()){
-             String line = iter.next();
-             res.add(Movie.valueOf(line));
-         }
+         System.out.println("\n\n CompletableFuture<Stream<String>>:\n"+  iter);
+//         while(iter.hasNext()){
+//             String line = iter.next();
+//             res.add(Movie.valueOf(line));
+//         }
 
+//         return req.getContent(url)
+//                 .thenApply(str -> str
+//                    .map(MovieSearchDto::));
          return null;
+    }
+
+
+    /**
+     *  https://api.themoviedb.org/3/search/movie?api_key=629fc6979bdef5c207d398578144c126&query=war+games
+     */
+    public CompletableFuture<Stream<MovieDetailsDto>> searchMovie2(int  movieId){
+        Gson gson = new Gson();
+        String path = MOVHUB_HOST + MOVHUB_MOVIE + MOVHUB_MOVIE_ARGS;
+        String url = String.format(path, movieId, MOVHUB_TOKEN);
+
+        System.out.println("\n\nSearchMovie path:\n"+ url);
+
+        List<Movie> res = new ArrayList<>();
+        CompletableFuture<Stream<String>> iter = req.getContent(path);
+
+        System.out.println("\n\n CompletableFuture<Stream<String>>:\n"+  iter);
+//         while(iter.hasNext()){
+//             String line = iter.next();
+//             res.add(Movie.valueOf(line));
+//         }
+
+     //   gson.fromJson(str, MovieDetailsDto.class)
+
+         return req.getContent(url)
+                 .thenApply(str -> {
+                     System.out.println("\n" + str);
+                     return str.map(command -> gson.fromJson(command, MovieDetailsDto.class));
+                 });
+
+//        return null;
+    }
+
+
+    @Override
+    public void close() throws Exception {
+        req.close();
     }
 }

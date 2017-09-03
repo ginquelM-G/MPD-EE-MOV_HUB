@@ -26,5 +26,6 @@
     <orderEntry type="library" name="Gradle: io.netty:netty-common:4.0.46.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.asynchttpclient:netty-resolver:2.0.32" level="project" />
     <orderEntry type="library" name="Gradle: org.asynchttpclient:netty-codec-dns:2.0.32" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.0" level="project" />
   </component>
 </module>

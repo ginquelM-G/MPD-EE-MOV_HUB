@@ -1,10 +1,4 @@
 import com.google.gson.Gson;
-import movhub.data.dto.MovieDetailsDto;
-import movhub.data.dto.MovieSearchDto;
-import util.HttpRequest;
-import util.IRequest;
-
-import static util.queries.LazyQueries.join;
 
 
 /*
@@ -22,18 +16,18 @@ public class App {
         String ur2 = "https://api.themoviedb.org/3/movie/293660?api_key=629fc6979bdef5c207d398578144c126";
         String uri3 = "https://api.themoviedb.org/3/movie/293660/credits?api_key=629fc6979bdef5c207d398578144c126";
         String uri4 = "https://api.themoviedb.org/3/person/10859/movie_credits?api_key=629fc6979bdef5c207d398578144c126";
-        IRequest req = new HttpRequest();
-        Iterable<String> body = req.getContent(uri);
-
-      //  body.forEach(System.out::println);
-        String json = join(body);
-        System.out.println("\n\n\nJSON:\n" + json+"\n\n");
-
-        MovieSearchDto  dto = gson.fromJson(json, MovieSearchDto.class);
-//        ActorCreditsDto dto1 = gson.fromJson(json, ActorCreditsDto.class);
-        MovieDetailsDto movieDetailsDto = gson.fromJson(json, MovieDetailsDto.class);
-        System.out.println("\n\n" + dto
-                +"\n\nMovieDetailsDto:\n"+ movieDetailsDto);
+//        IRequest req = new HttpRequest();
+//        Iterable<String> body = req.getContent(uri);
+//
+//      //  body.forEach(System.out::println);
+//        String json = join(body);
+//        System.out.println("\n\n\nJSON:\n" + json+"\n\n");
+//
+//        MovieSearchDto  dto = gson.fromJson(json, MovieSearchDto.class);
+////        ActorCreditsDto dto1 = gson.fromJson(json, ActorCreditsDto.class);
+//        MovieDetailsDto movieDetailsDto = gson.fromJson(json, MovieDetailsDto.class);
+//        System.out.println("\n\n" + dto
+//                +"\n\nMovieDetailsDto:\n"+ movieDetailsDto);
 
 
 

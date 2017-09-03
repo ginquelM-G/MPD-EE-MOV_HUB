@@ -21,6 +21,7 @@ public class FileRequest implements IRequest {
         });
     }
 
+    // Sincrono
     protected static Stream<String> getStream(String path) {
         String [] parts = path.split("/");
         path = parts[parts.length-1].substring(0, 5);
