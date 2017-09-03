@@ -63,7 +63,7 @@ public class MovhubDTOTest {
         Gson gson = new Gson();
         String uri3 = "https://api.themoviedb.org/3/movie/293660/credits?api_key=629fc6979bdef5c207d398578144c126";
         IRequest req = new HttpRequest();
-        Iterable<String> body = req.getContent(uri3);
+        Iterable<String> body = req.getContent(uri3).get();
 
         String json = join(body);
        // System.out.println("\n\n\nJSON:\n" + json + "\n\n");

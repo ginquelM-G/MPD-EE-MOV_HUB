@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.asynchttpclient:netty-resolver:2.0.32">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.asynchttpclient/netty-resolver/2.0.32/fb0e8b1db39b728c4fcbad6eea6c9c95f0f29963/netty-resolver-2.0.32.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.asynchttpclient/netty-resolver/2.0.32/731b8b65b365e110aa6fa358a6fc1a8fee772cf/netty-resolver-2.0.32-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
