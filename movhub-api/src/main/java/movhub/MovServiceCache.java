@@ -1,13 +1,20 @@
 package movhub;
 
+import com.google.gson.Gson;
 import movhub.data.MovhubWebApi;
+import movhub.data.dto.MovieDetailsDto;
 import movhub.model.Actor;
 import movhub.model.Movie;
 import movhub.model.MovieDetails;
+import util.HttpRequest;
+import util.IRequest;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+
+import static util.queries.LazyQueries.join;
 
 /**
  * Created by Moreira on 02-09-2017.
@@ -21,7 +28,7 @@ public class MovServiceCache extends MovService {
      */
 
 
-    private final Map<Integer,CompletableFuture<MovieDetails>> movieDetailsMap = new HashMap<>();
+    private final Map<Integer,CompletableFuture<MovieDetails>> cacheMovieDetailsMap = new HashMap<>();
     private final Map<Integer, CompletableFuture<Actor>> actorMap = new HashMap<>();
 
 
@@ -35,10 +42,44 @@ public class MovServiceCache extends MovService {
     }
 
     public CompletableFuture<MovieDetails> movieDetails(int id){
+        if (id == 0) id = 293660;
+        CompletableFuture<MovieDetails> movieDetailsCF = getOrCreate(id, cacheMovieDetailsMap);
+
+        Gson gson = new Gson();
+        String uri2 = String.format("https://api.themoviedb.org/3/movie/%d?api_key=629fc6979bdef5c207d398578144c126", id);
+
+        IRequest req = new HttpRequest();
+        Iterable<String> body = req.getContent(uri2);
+        String json = join(body);
+//        System.out.println("\n\n\nJSON:\n" + json + "\n\n");
+        MovieDetailsDto movieDetailsDto = gson.fromJson(json, MovieDetailsDto.class);
+        System.out.println( movieDetailsDto);
+
+
         return null;
     }
 
     public CompletableFuture<Actor> actor(int id, String name){
         return null;
     }
+
+
+
+    private static CompletableFuture<MovieDetails> getOrCreate(int id, Map<Integer,CompletableFuture<MovieDetails>> cacheMovieDetailsMap){
+        CompletableFuture<MovieDetails> movDetails = cacheMovieDetailsMap.get(id);
+        try {
+            if(movDetails == null || movDetails.get() == null){
+                movDetails = CompletableFuture.supplyAsync(() -> null);
+                cacheMovieDetailsMap.put(id, movDetails);
+            }
+
+            return null;
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return movDetails;
+    }
+
 }
