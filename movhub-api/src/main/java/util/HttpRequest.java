@@ -14,6 +14,7 @@ public class HttpRequest  extends Request {
         super(HttpRequest::getStream);
     }
 
+    
     public static InputStream getStream(String path) {
         InputStream in;
         try{
