@@ -4,11 +4,11 @@ import org.asynchttpclient.AsyncHttpClient;
 import org.asynchttpclient.Dsl;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.UncheckedIOException;
-import java.net.URL;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Stream;
+
+import static java.util.stream.StreamSupport.stream;
+
 
 /**
  * Created by User01 on 28/08/2017.
@@ -19,18 +19,22 @@ public class HttpRequest  implements IRequest {
 
     @Override
     public CompletableFuture<Stream<String>> getContent(String path) {
-
-        return null;
+        return asyncHttpClient
+                .prepareGet(path)
+                .execute()
+                .toCompletableFuture()
+                .thenApply(resp -> resp.getResponseBodyAsStream()) // igual a Stream::map
+                .thenApply(in -> stream(new IteratorFromReader(in), false));
     }
 
-    public static InputStream getStream(String path) {
-        InputStream in;
-        try{
-            return in = new URL(path).openStream();
-        }catch (IOException e){
-            throw new UncheckedIOException(e);
+    @Override
+    public void close() {
+        if(asyncHttpClient.isClosed()){
+            try{
+                asyncHttpClient.close();
+            }catch (IOException e){
+                throw new RuntimeException(e);
+            }
         }
     }
-
-
 }

@@ -1,22 +1,11 @@
 package queries;
 
-import com.google.gson.Gson;
-import movhub.data.dto.ActorCreditsDto;
-import movhub.data.dto.CreditsDto;
-import movhub.data.dto.MovieDetailsDto;
-import movhub.data.dto.MovieSearchDto;
-import org.junit.Test;
-import util.HttpRequest;
-import util.IRequest;
-
-import static org.junit.Assert.assertNotNull;
-import static util.queries.LazyQueries.join;
-
 /**
  * Created by Moreira on 02-09-2017.
  */
 public class MovhubDTOTest {
 
+    /*
     @Test
     public void test_MovieSearcDto() {
         Gson gson = new Gson();
@@ -63,17 +52,17 @@ public class MovhubDTOTest {
         Gson gson = new Gson();
         String uri3 = "https://api.themoviedb.org/3/movie/293660/credits?api_key=629fc6979bdef5c207d398578144c126";
         IRequest req = new HttpRequest();
-        Iterable<String> body = req.getContent(uri3).get();
-
-        String json = join(body);
-       // System.out.println("\n\n\nJSON:\n" + json + "\n\n");
-
-        CreditsDto creditsDto = gson.fromJson(json, CreditsDto.class);
-//        CastItemDto castItemDto = gson.fromJson(json, CastItemDto.class);
-        System.out.println( creditsDto);
-//        System.out.println("\n\n"+ castItemDto);
-
-        assertNotNull(creditsDto);
+//        Iterable<String> body = req.getContent(uri3).get();
+//
+//        String json = join(body);
+//       // System.out.println("\n\n\nJSON:\n" + json + "\n\n");
+//
+//        CreditsDto creditsDto = gson.fromJson(json, CreditsDto.class);
+////        CastItemDto castItemDto = gson.fromJson(json, CastItemDto.class);
+//        System.out.println( creditsDto);
+////        System.out.println("\n\n"+ castItemDto);
+//
+//        assertNotNull(creditsDto);
 //        assertNotNull(castItemDto);
 
     }
@@ -94,4 +83,5 @@ public class MovhubDTOTest {
     }
 
 
+    */
 }

@@ -1,48 +1,35 @@
 package util;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.Iterator;
+import java.io.*;
+import java.util.Spliterators;
+import java.util.function.Consumer;
 
 /**
  * Created by Moreira on 01-09-2017.
  */
-public class IteratorFromReader implements Iterator<String>{
+public class IteratorFromReader extends Spliterators.AbstractSpliterator<String> {
 
-    final BufferedReader reader;
-    final InputStream in;
-    private String nextLine;
+    BufferedReader reader;
 
     public IteratorFromReader(InputStream in){
-        this.in = in;
+        super(Long.MAX_VALUE, ORDERED);
         this.reader = new BufferedReader(new InputStreamReader(in));
-        this.nextLine = moveNext();
     }
 
-    private String moveNext(){
+    @Override
+    public boolean tryAdvance(Consumer<? super String> action) {
         try{
+            if(reader==null) return false;
             String line = reader.readLine();
-            if(line != null){
-            //    in.close();
-             //   reader.close();
+            if(line == null){
+                reader.close();
+                reader = null;
+                return false;
             }
-            return line;
+            action.accept(line);
+            return true;
         }catch (IOException e){
-            throw new RuntimeException();
+            throw  new UncheckedIOException(e);
         }
-    }
-
-    @Override
-    public boolean hasNext() {
-        return nextLine != null;
-    }
-
-    @Override
-    public String next() {
-        String curr = nextLine;
-        nextLine = moveNext();
-        return curr;
     }
 }
