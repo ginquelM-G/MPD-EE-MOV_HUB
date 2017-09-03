@@ -1,4 +1,13 @@
 import com.google.gson.Gson;
+import movhub.MovService;
+import movhub.data.MovhubWebApi;
+import movhub.model.MovieDetails;
+import util.HttpRequest;
+import util.IRequest;
+
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import java.util.stream.Stream;
 
 
 /*
@@ -9,7 +18,7 @@ public class App {
         return "Hello world.";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         Gson gson = new Gson();
         String uri = "https://api.themoviedb.org/3/search/movie?query=Deadpool&api_key=629fc6979bdef5c207d398578144c126";
@@ -35,9 +44,16 @@ public class App {
 //        if(lib.someLibraryMethod())
 //            System.out.println(new App().getGreeting());
 //
-//        //IRequest req = new HttpRequest();
+        IRequest req = new HttpRequest();
 //        IRequest req = new FileRequest();
-//        MovhubWebApi movhubWebApi = new MovhubWebApi(req);
+        MovhubWebApi movhubWebApi = new MovhubWebApi(req);
 //        movhubWebApi.searchMovie();
+        movhubWebApi.searchMovie2(293660);
+
+
+        MovService movService = new MovService();
+        CompletableFuture<Stream<MovieDetails>> m = movService.movieDetails(293660);
+
+        System.out.println("kkkkkkkk "+m.get().map(mm -> mm.getOriginalTitle().toString()));
     }
 }

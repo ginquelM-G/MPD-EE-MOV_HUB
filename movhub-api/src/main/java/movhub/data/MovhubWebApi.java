@@ -98,7 +98,7 @@ public class MovhubWebApi implements AutoCloseable{
         System.out.println("\n\nSearchMovie path:\n"+ url);
 
         List<Movie> res = new ArrayList<>();
-        CompletableFuture<Stream<String>> iter = req.getContent(path);
+        CompletableFuture<Stream<String>> iter = req.getContent(url);
 
         System.out.println("\n\n CompletableFuture<Stream<String>>:\n"+  iter);
 //         while(iter.hasNext()){

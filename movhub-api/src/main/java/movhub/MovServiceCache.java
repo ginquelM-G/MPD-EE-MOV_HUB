@@ -1,20 +1,15 @@
 package movhub;
 
-import com.google.gson.Gson;
 import movhub.data.MovhubWebApi;
-import movhub.data.dto.MovieDetailsDto;
 import movhub.model.Actor;
 import movhub.model.Movie;
 import movhub.model.MovieDetails;
-import util.HttpRequest;
-import util.IRequest;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
-
-import static util.queries.LazyQueries.join;
+import java.util.stream.Stream;
 
 /**
  * Created by Moreira on 02-09-2017.
@@ -41,19 +36,19 @@ public class MovServiceCache extends MovService {
         return  null;
     }
 
-    public CompletableFuture<MovieDetails> movieDetails(int id){
-        if (id == 0) id = 293660;
-        CompletableFuture<MovieDetails> movieDetailsCF = getOrCreate(id, cacheMovieDetailsMap);
-
-        Gson gson = new Gson();
-        String uri2 = String.format("https://api.themoviedb.org/3/movie/%d?api_key=629fc6979bdef5c207d398578144c126", id);
-
-        IRequest req = new HttpRequest();
-        Iterable<String> body = req.getContent(uri2);
-        String json = join(body);
-//        System.out.println("\n\n\nJSON:\n" + json + "\n\n");
-        MovieDetailsDto movieDetailsDto = gson.fromJson(json, MovieDetailsDto.class);
-        System.out.println( movieDetailsDto);
+    public CompletableFuture<Stream<MovieDetails>> movieDetails(int id){
+//        if (id == 0) id = 293660;
+//        CompletableFuture<MovieDetails> movieDetailsCF = getOrCreate(id, cacheMovieDetailsMap);
+//
+//        Gson gson = new Gson();
+//        String uri2 = String.format("https://api.themoviedb.org/3/movie/%d?api_key=629fc6979bdef5c207d398578144c126", id);
+//
+//        IRequest req = new HttpRequest();
+//        Iterable<String> body = req.getContent(uri2);
+//        String json = join(body);
+////        System.out.println("\n\n\nJSON:\n" + json + "\n\n");
+//        MovieDetailsDto movieDetailsDto = gson.fromJson(json, MovieDetailsDto.class);
+//        System.out.println( movieDetailsDto);
 
 
         return null;

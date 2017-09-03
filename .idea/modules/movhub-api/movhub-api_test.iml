@@ -12,6 +12,7 @@
     <orderEntry type="module" module-name="movhub-api_main" />
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-math3:3.6.1" level="project" />
     <orderEntry type="library" name="Gradle: org.asynchttpclient:async-http-client:2.0.32" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.2.4" level="project" />
     <orderEntry type="library" name="Gradle: com.google.guava:guava:21.0" level="project" />
     <orderEntry type="library" name="Gradle: org.asynchttpclient:async-http-client-netty-utils:2.0.32" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-codec-http:4.0.46.Final" level="project" />
@@ -29,7 +30,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Gradle: org.asynchttpclient:netty-resolver:2.0.32" level="project" />
     <orderEntry type="library" name="Gradle: org.asynchttpclient:netty-codec-dns:2.0.32" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.0" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="movhub-api_main" />
 </module>
